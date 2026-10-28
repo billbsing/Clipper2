@@ -1684,7 +1684,7 @@ begin
         inc(p);
       end;
     end;
-  if Result.Left = MaxDouble then Result := NullRectD;
+  if Result.Left > Result.Right then Result := NullRectD; // ie no points
 end;
 //------------------------------------------------------------------------------
 
